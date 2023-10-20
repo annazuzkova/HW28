@@ -1,0 +1,29 @@
+.div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: block  3s ease-out infinite;
+    position: fixed;
+    left: 500px;
+    top: 200px;
+}
+@keyframes block{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translateY(200px);
+        background-color: blue;
+    }
+    50%{
+        transform: translate(200px, 200px);
+        background-color: green;
+    }
+    75%{
+        transform: translate(200px, 0px);
+        background-color: yellow;
+    }
+    100%{
+        transform: translate(0);
+    }
+}
